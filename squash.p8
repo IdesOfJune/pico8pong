@@ -28,7 +28,7 @@ timer=0
 
 music(43)
 
-function movepaddle() --player 1 uses arrow keys ti nive
+function movepaddle() --player 1 uses arrow keys to move
 	if btn(0) then 
 		padx-=3
 	elseif btn(1) then
@@ -104,7 +104,7 @@ function losedeadball_2() --for p2 (top)
  end
 end
 
-function bounceball() --change direction
+function bounceball() --change direction when hitting wall 
  if ballx < ballsize then
   ballxdir=-ballxdir
  end
@@ -119,7 +119,7 @@ function bouncepaddle()
 	end
 end
 
-function bouncepaddle_2() --for p2
+function bouncepaddle_2() --for player 2 
 
  if ballx >=padx_2 and
  ballx <=padx_2+padw_2 and
