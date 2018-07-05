@@ -28,7 +28,7 @@ timer=0
 
 music(43)
 
-function movepaddle() --player 1
+function movepaddle() --player 1 uses arrow keys ti nive
 	if btn(0) then 
 		padx-=3
 	elseif btn(1) then
@@ -48,7 +48,7 @@ function barrier()
   then padx_2=0 end
 end
 
-function movepaddle_2() -- player 2
+function movepaddle_2() -- player 2 uses Z and X to move
  if btn(4) then
  	padx_2-=3
  elseif btn(5) then
@@ -140,7 +140,7 @@ end
 -->8
 --draw
 
-function _draw()
+function _draw() --draw the elements 
  --clear screen
  rectfill(0,0,128,128,1)
  --draw division
@@ -199,8 +199,8 @@ function _update()
  colorchange()
  barrier()
  
-end
-__gfx__
+end 
+__gfx__ --sound effects and music
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 07707700011011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 77777770111111100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
